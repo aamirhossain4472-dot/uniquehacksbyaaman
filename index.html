@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unique Hacks By Aaman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111827;
+      --primary:#22d3ee;
+      --secondary:#6366f1;
+      --text:#e5e7eb;
+      --muted:#94a3b8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(99,102,241,.25), transparent),
+                  radial-gradient(900px 500px at -10% 10%, rgba(34,211,238,.2), transparent),
+                  var(--bg);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+    header{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter: blur(10px);
+      background:rgba(11,18,32,.7);
+      display:flex;justify-content:space-between;align-items:center;
+      padding:15px 30px;
+      border-bottom:1px solid rgba(255,255,255,.05);
+    }
+    header h1{margin:0;font-size:20px;letter-spacing:.5px}
+    nav a{
+      margin-left:20px;text-decoration:none;color:var(--muted);font-size:14px;
+      transition:.3s;
+    }
+    nav a:hover{color:var(--primary)}.hero{
+  text-align:center;padding:100px 20px 60px;
+  animation: fadeIn 1.5s ease forwards;
+}
+.hero h2{
+  font-size:42px;margin-bottom:10px;
+  background: linear-gradient(90deg, #22d3ee, #6366f1);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p{color:var(--muted);max-width:500px;margin:auto}
+.btn{
+  display:inline-block;margin-top:25px;padding:12px 28px;
+  border-radius:30px;
+  background:linear-gradient(90deg,var(--primary),var(--secondary));
+  color:#000;font-weight:600;text-decoration:none;
+  box-shadow:0 10px 25px rgba(34,211,238,.3);
+  transition:.3s;
+}
+.btn:hover{transform:translateY(-3px) scale(1.05)}
+
+.products{
+  padding:60px 30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.card{
+  background:var(--card);
+  padding:20px;border-radius:20px;
+  text-align:center;
+  transition:.4s;
+  position:relative;
+  overflow:hidden;
+}
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, transparent, rgba(255,255,255,.1), transparent);
+  opacity:0;
+  transition:.4s;
+}
+.card:hover::before{opacity:1}
+.card:hover{transform:translateY(-8px) scale(1.03)}
+.card img{
+  width:100%;border-radius:12px;margin-bottom:10px;
+}
+.card h3{margin:10px 0 5px}
+.card p{color:var(--muted);font-size:14px}
+
+footer{
+  text-align:center;padding:25px;
+  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,.05);
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Unique Hacks By Aaman</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero">
+  <h2>Upgrade Your Daily Tech Life</h2>
+  <p>Stylish mobile accessories & trending Chinese gadgets at unbeatable prices</p>
+  <a href="#products" class="btn">Explore Now</a>
+</section><section id="products" class="products">
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h3>Wireless Earbuds</h3>
+    <p>Crystal Clear Sound</p>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h3>Fast Charger</h3>
+    <p>Super Fast Charging</p>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h3>Phone Holder</h3>
+    <p>Smart & Adjustable</p>
+  </div>
+</section><footer id="contact">
+  📩 Inbox us on Facebook to order | 🚚 Delivery all over Bangladesh
+</footer></body>
+</html>
